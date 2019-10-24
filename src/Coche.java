@@ -1,25 +1,11 @@
 
 public class Coche {
-	public static void main(String args[]) {
-		Coche c;
-		c = new Coche();
-		c.cilindrada = 1800;
-		c.color = "plata";
-		c.precio = 25000.0;
-		System.out.println("¿Qué coche es este?");
-		c.verCoche();
-		System.out.println("Vamos a arrancar el coche");
-		c.arrancar();
-		System.out.println("¿Qué coche es este?");
-		c.verCoche();
-		System.out.println("Vamos a arrancar el coche");
-		c.arrancar();
-	}
 
-	Integer cilindrada;
-	String color;
-	Double precio;
-	boolean isArrancado;
+
+		Integer cilindrada;
+		String color;
+		Double precio;
+		boolean isArrancado;
 
 	void arrancar() {
 		if (isArrancado != true) {
@@ -40,5 +26,19 @@ public class Coche {
 		}
 
 	}
-
+	public static void main(String args[]) {
+		Coche c;
+		c = new Coche();
+		c.cilindrada = 1800;
+		c.color = "plata";
+		c.precio = 25000.0;
+		System.out.println("¿Qué coche es este?");
+		c.verCoche();
+		System.out.println("Vamos a arrancar el coche");
+		c.arrancar();
+		System.out.println("¿Qué coche es este?");
+		c.verCoche();
+		System.out.println("Vamos a arrancar el coche");
+		c.arrancar();
+	}
 }
